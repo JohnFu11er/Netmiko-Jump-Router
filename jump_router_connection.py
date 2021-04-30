@@ -22,4 +22,6 @@ time.sleep(2)
 net_connect.write_channel("supersecretpassword\n")
 
 # Print the prompt that of the router that Netmiko is actively connected to
-print(net_connect.find_prompt())    # Should print the name of your target server
+# Should print the name of your target server indicating that you are connected
+# to the "jump server"
+print(net_connect.find_prompt())
